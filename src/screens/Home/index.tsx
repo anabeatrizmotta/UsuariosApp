@@ -159,11 +159,19 @@ export function Home() {
           />
         </View>
 
+      <View style={styles.btnContainer}>
+        <TouchableOpacity
+        style={styles.buttonTotal}
+        onPress={handleShowTotals}>
+          <Text style={styles.buttonText}>Total</Text>
+        </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={handleAddNewUser}>
           <Text style={styles.buttonText}>Incluir</Text>
         </TouchableOpacity>
+        </View>
+
       </View>
 
       <FlatList
@@ -176,13 +184,6 @@ export function Home() {
           />
         )}
       />
-
-      <TouchableOpacity
-        style={styles.buttonTotal}
-        onPress={handleShowTotals}>
-        <Text style={styles.buttonText}>Total</Text>
-      </TouchableOpacity>
-
     </View>
   );
 }

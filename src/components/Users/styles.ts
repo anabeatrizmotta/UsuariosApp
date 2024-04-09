@@ -6,7 +6,6 @@ export const styles = StyleSheet.create({
   },
   name: {
     flex: 1,
-    // color: '#363F5F',
     color: '#FFF',
     fontSize: 18,
     marginLeft: 16,
@@ -14,13 +13,16 @@ export const styles = StyleSheet.create({
   },
   button: {
     width: 56,
-    backgroundColor: '#E23C44',
+    height: 80,
+    backgroundColor: '##B74956',
     justifyContent: 'center',
     alignItems: 'center',
+    borderTopRightRadius: 10,
+    borderBottomRightRadius: 10
   },
   buttonText: {
     color: '#FFF',
-    fontSize: 24,
+    fontSize: 16,
   },
   middle: {
     flex: 1,
@@ -29,6 +31,8 @@ export const styles = StyleSheet.create({
     backgroundColor: '#1F1E25',
     borderWidth: 1,
     borderColor: "#D2D5D9",
+    borderTopLeftRadius: 10,
+    borderBottomLeftRadius: 10
   },
   form: {
     flexDirection: 'row',

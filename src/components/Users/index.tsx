@@ -1,5 +1,5 @@
 import { Text, TouchableOpacity, View } from "react-native";
-
+import { Icon } from "react-native-elements";
 import { styles } from "./styles";
 
 type Props = {
@@ -29,11 +29,11 @@ export function Users({ data, onRemove }: PropsData) {
             {data.city}
           </Text>
         </View>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={onRemove}
-        >
-          <Text>Excluir</Text>
+        <TouchableOpacity style={styles.button} onPress={onRemove}>
+          <Icon
+            name='trash'
+            type='font-awesome'
+            color='white'/>
         </TouchableOpacity>
       </View>
     </View>

@@ -41,10 +41,13 @@ export const styles = StyleSheet.create({
   button: {
     height: 56,
     borderRadius: 5,
-    backgroundColor: '#BF4E63',
+    backgroundColor: '#904278',
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 20,
+    width: 250,
+    borderWidth: 1,
+    borderColor: '#BF4E63'
   },
   form: {
     width: '100%',
@@ -65,6 +68,7 @@ export const styles = StyleSheet.create({
     marginBottom: 50,
     borderWidth: 1,
     borderColor: "#D2D5D9",
+    width: 250
   },
   header: {
     flexDirection: 'row', 
@@ -93,5 +97,10 @@ export const styles = StyleSheet.create({
     color: '#FFF',
     fontSize: 16,
     marginBottom: 5
+  },
+  btnContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between'
   }
 })
