@@ -91,10 +91,12 @@ export function Home() {
         user.city !== 'BP' && user.city !== '',
     ).length;
 
+    console.log('======================');
     console.log('Total de usuários cadastrados:', totalUsers);
     console.log('Total de usuários que moram em VR:', totalVR);
     console.log('Total de usuários que moram em BM e PH:', totalBM_PH);
     console.log('Total de usuários que não moram em BP:', totalNotBP);
+    console.log('======================');
   }
 
   return (
@@ -180,7 +182,7 @@ export function Home() {
         onPress={handleShowTotals}>
         <Text style={styles.buttonText}>Total</Text>
       </TouchableOpacity>
-      
+
     </View>
   );
 }

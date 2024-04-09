@@ -10,13 +10,11 @@ export const styles = StyleSheet.create({
     color: '#FFF',
     fontSize: 18,
     marginLeft: 16,
-    fontWeight: 'bold',
     marginBottom: 5,
   },
   button: {
     width: 56,
     backgroundColor: '#E23C44',
-    borderRadius: 5,
     justifyContent: 'center',
     alignItems: 'center',
   },
