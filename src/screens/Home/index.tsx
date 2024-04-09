@@ -6,10 +6,12 @@ import {
   TouchableOpacity,
   Alert,
   FlatList,
+  Image
 } from 'react-native';
 import { styles } from './styles';
 import { Users } from '../../components/Users';
 import RNPickerSelect from 'react-native-picker-select';
+import { Header } from '../../components/Header/Header';
 
 type Props = {
   id: string;
@@ -96,21 +98,32 @@ export function Home() {
   }
 
   return (
+
     <View style={styles.container}>
+
+    <View style={styles.header}>
+      <Image style={styles.star} 
+        source={require('./img/cc_efa206e71.png')}></Image>
+      <View style={styles.lineDetail}></View>
+      <View style={styles.line}></View>
+    </View>
+
       <Text style={styles.eventName}>
-        Cadastro de Usuários
+        Cadastre seu usuário
       </Text>
 
       <View style={styles.form}>
+        <Text style={styles.label}>Nome</Text>
         <TextInput
           style={styles.input}
-          placeholder="Nome do usuário"
-          placeholderTextColor="#6B6B6B"
+          placeholder="Entre com seu nome"
+          placeholderTextColor="#808081"
           autoCapitalize="words"
           value={name}
           onChangeText={(value) => setName(value)}
         />
 
+        <Text style={styles.label}>E-mail</Text>
         <TextInput
           style={styles.input}
           placeholder="Email do usuário"
@@ -120,7 +133,8 @@ export function Home() {
           onChangeText={(value) => setEmail(value)}
         />
 
-        <View style={styles.pickerContainer}>
+        <View style={styles.inputSelect}>
+          <Text style={styles.label}>Cidade</Text>
           <RNPickerSelect
             onValueChange={(value) => setCity(value)}
             items={[
@@ -151,7 +165,7 @@ export function Home() {
       </View>
 
       <TouchableOpacity
-        style={styles.button}
+        style={styles.buttonTotal}
         onPress={handleShowTotals}>
         <Text style={styles.buttonText}>Total</Text>
       </TouchableOpacity>
