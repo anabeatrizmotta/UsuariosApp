@@ -45,7 +45,6 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 20,
-    marginTop: 60
   },
   form: {
     width: '100%',
@@ -63,7 +62,7 @@ export const styles = StyleSheet.create({
     borderRadius: 5,
     justifyContent: 'center', 
     alignItems: 'center',
-    marginBottom: 20,
+    marginBottom: 50,
     borderWidth: 1,
     borderColor: "#D2D5D9",
   },

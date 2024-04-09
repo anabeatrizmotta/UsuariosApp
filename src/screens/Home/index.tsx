@@ -164,12 +164,6 @@ export function Home() {
         </TouchableOpacity>
       </View>
 
-      <TouchableOpacity
-        style={styles.buttonTotal}
-        onPress={handleShowTotals}>
-        <Text style={styles.buttonText}>Total</Text>
-      </TouchableOpacity>
-
       <FlatList
         data={filterCity ? users.filter((user) => user.city === filterCity) : users}
         keyExtractor={(item) => item.id}
@@ -180,6 +174,13 @@ export function Home() {
           />
         )}
       />
+
+      <TouchableOpacity
+        style={styles.buttonTotal}
+        onPress={handleShowTotals}>
+        <Text style={styles.buttonText}>Total</Text>
+      </TouchableOpacity>
+      
     </View>
   );
 }

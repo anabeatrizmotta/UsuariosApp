@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
   name: {
     flex: 1,
     // color: '#363F5F',
-    color: '#000',
+    color: '#FFF',
     fontSize: 18,
     marginLeft: 16,
     fontWeight: 'bold',
@@ -18,17 +18,19 @@ export const styles = StyleSheet.create({
     backgroundColor: '#E23C44',
     borderRadius: 5,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   buttonText: {
     color: '#FFF',
     fontSize: 24,
   },
   middle: {
-    backgroundColor: '#F0F2F5',
     flex: 1,
     marginRight: 2,
     height: 80,
+    backgroundColor: '#1F1E25',
+    borderWidth: 1,
+    borderColor: "#D2D5D9",
   },
   form: {
     flexDirection: 'row',
